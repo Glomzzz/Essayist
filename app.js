@@ -53,7 +53,8 @@ async function competion(promot, content) {
       { role: "system", content: promot },
       { role: "user", content },
     ],
-    model: "gpt-4-turbo",
+    // gpt-3.5-turbo or gpt-4-turbo
+    model: "gpt-3.5-turbo",
   });
   return result.choices[0].message.content;
 }
